@@ -16,8 +16,8 @@ body{
     max-width: 300px;
     max-height: 600px;
     background-color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 2px rgb(97, 97, 97);
-    border-radius: 30px;
+    box-shadow: 0px 0px 7px rgb(97, 97, 97);
+    border-radius: 40px;
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -52,12 +52,11 @@ body{
     opacity: 50%;
 }
 .date{
-    font-size: 15px;
+    font-size: 14px;
 }
 .time_date{
     font-size: 60px;
     font-weight: 600;
-    letter-spacing:-2px;
 }
 .bottom_button{
     max-width: 120px;
@@ -81,10 +80,10 @@ body{
     bottom: 19%;
     left: 10%;
     opacity: 0%;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    background: linear-gradient(135deg, rgba(155,155,155,0.2), rgba(155,155,155,0.2));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.18);
+    border: 1px solid rgba(155,155,155,0.2);
     box-shadow: 0px 8px 32px 0 rgba(0,0,0,0.37) ;
 }
 .photo_box{
@@ -114,7 +113,8 @@ body{
     cursor: pointer;
     position: absolute;
     bottom: 10%;
-    left: 50%;
+    left: 52%;
+    opacity: 90%;
 }
 #pause_button{
     max-width: 30px;
@@ -126,26 +126,20 @@ body{
     cursor: pointer;
     position: absolute;
     bottom: 10%;
-    left: 50%;
+    left: 52%;
     opacity: 0;
     z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.pause_stick{
-    font-size: 20px;
-    text-align: center;
-    font-weight: 900;
+    opacity: 90%;
 }
 .play_img{
     width: 30px;
     height: 30px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 2px grey;
     border-radius: 50%;
     border: none;
-    opacity: 50%;
+    opacity: 100%;
 }
 #audio{
     display: none;
@@ -185,4 +179,41 @@ body{
 #camera_img{
     width: 28px;
     height: 28px;
+}
+.love_letter{
+    display: inline-block;
+    color: rgb(151, 151, 151);
+    font-size: 10px;
+    opacity: 100%;
+}
+.small_time_box{
+    position: absolute;
+    top: 2.5%;
+    left: 7%;
+}
+.small_time{
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    opacity: 0%;
+}
+.connection_box{
+    position: absolute;
+    top: 3.2%;
+    right: 19%;
+}
+.connection_img{
+    width: 15px;
+    max-height: 15px;
+    opacity: 0%;
+}
+.battery_box{
+    position: absolute;
+    top: 2.8%;
+    right: 10%;
+}
+.battery_img{
+    width: 20px;
+    height: 20px;
+    opacity: 0%;
 }
